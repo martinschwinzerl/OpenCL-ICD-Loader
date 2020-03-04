@@ -72,6 +72,7 @@ else ()
         loader/linux/icd_exports.map)
 endif ()
 
+message( STATUS "Debug: OPENCL_TEST_VALUE: ${OPENCL_TEST_VALUE}" )
 message( STATUS "Debug: OPENCL_ICD_LOADER_HEADERS_DIR: ${OPENCL_ICD_LOADER_HEADERS_DIR}" )
 
 if( NOT OPENCL_ICD_LOADER_HEADERS_DIR )
