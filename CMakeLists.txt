@@ -72,6 +72,8 @@ else ()
         loader/linux/icd_exports.map)
 endif ()
 
+message( STATUS "Debug: OPENCL_ICD_LOADER_HEADERS_DIR: ${OPENCL_ICD_LOADER_HEADERS_DIR}" )
+
 if( NOT OPENCL_ICD_LOADER_HEADERS_DIR )
     set (OPENCL_ICD_LOADER_HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/inc CACHE PATH "Path to OpenCL Headers")
 endif()
